@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>お問い合わせ</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+<body class="overlay3">
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-button">
+	<span></span>
+</label>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-button">
+</label>
+
+<nav class="menu-nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="concept.html">Concept</a></li>
+		<li><a href="coming_soon.html">Artworks</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li>
+			<a href="https://www.instagram.com/reflecting_mirror_images" target=”_blank”>
+			<img src="./images/Instagram_Glyph_Black.svg" alt="画像1の説明文" class="instagram_icon">
+			</a>
+		</li>
+	</ul>
+</nav>
+<main class="page">
+	<div class="scroll-fade-in">
+			<div class="contact">
+				<p class="contact2-title">展覧会に関するご質問</p>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSelt21QKBrElSaV-QbadlRjDmqOu9xSKp8bBXlVgKswjjlH4w/viewform" target=”_blank”><p class="form">お問い合わせフォーム</p></a>
+					<div class="txt">
+						<p>お問い合わせは上記フォームにて承っております。お電話等での対応は行っておりません。</p>
+					</div>
+			</div>
+			<div class="contact2">
+				<p class="contact2-title">著作権について</p>
+				<div class="txt">
+				<p>本ウェブサイトに掲載されているすべてのコンテンツ（文章、画像、デザインなど）の著作権は、特記がない限り、「鏡像をうつす」の主催者および各著作物の権利者に帰属します。</p>
+					<p>これらのコンテンツを著作権法で認められる範囲を超えて、無断で複製、転載、改変、頒布、販売などを行うことを固く禁じます。</p>
+					<p>「引用」を行う際は、必ず出典を明示してください。</p>
+				</div>
+			</div>
+			<div class="contact2">
+				<p class="contact2-title">免責事項</p>
+					<div class="txt">
+						<p>本ウェブサイトの情報は細心の注意を払って掲載しておりますが、その内容の正確性、完全性、有用性を保証するものではありません。</p>
+						<p>また、本ウェブサイトには外部のウェブサイトへのリンクが含まれています。これらのリンクは利用者の利便性のために提供されており、リンク先のウェブサイトの内容や運営について、当サイトが何らかの保証をするものではありません。</p>
+						<p>当サイトおよびリンク先のウェブサイトのご利用によって生じた、いかなる損害についても一切の責任を負いかねますので、あらかじめご了承ください。</p>
+						<p>本ウェブサイトは、Meta社のサービスを利用していますが、Meta社との共同制作、協賛、または公認を受けたものではありません。「Instagram」およびInstagramのロゴは、Meta Platforms, Inc.の商標または登録商標です。</p>
+					</div>
+			</div>
+			<div class="credit">
+				<p>Director: Loki</p>
+				<p>Designed by: Shiina Kota</p>
+			</div>
+		<footer class="responsive">
+			<a href="contact.html">&copy; 2025 鏡像をうつす</a>
+		</footer>
+	</div>
+	<div class="footer-text-2">
+		<a href="contact.html" class="footer_fadein_2">&copy; 2025 鏡像をうつす</a>
+	</div>
+</main>
+<script>
+// ハンバーガーメニューの表示
+	document.addEventListener('DOMContentLoaded', () => {
+	const menuButton = document.querySelector('.menu-button');
+	setTimeout(() => {
+	menuButton.classList.add('visible');
+	}, 200);
+});
+
+// フェードイン処理
+const fadeInElements = document.querySelectorAll('.scroll-fade-in');
+const handleScroll = () => {
+	fadeInElements.forEach(element => {
+	const elementPosition = element.getBoundingClientRect().top;
+	const screenHeight = window.innerHeight;
+	// 要素が画面の80%の位置に来たら'active'クラスを追加
+	if (elementPosition < screenHeight * 0.8) {
+	element.classList.add('active');
+	} else {
+	element.classList.remove('active');
+	}
+});
+};
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+</script>
+</body>
+</html>
