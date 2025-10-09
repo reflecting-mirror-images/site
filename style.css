@@ -2,17 +2,17 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: "AozoraMincho";
-	background: linear-gradient(rgb(200, 200, 202), rgb(255, 255, 255));
+	background: linear-gradient(rgb(200, 200, 200), rgb(255, 255, 255));
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-color:rgb(200, 200, 202);
+	background-color:rgb(200, 200, 200);
 }
 .index {
 	margin: 0;
 	padding: 0;
 	font-family: "AozoraMincho";
-	background: linear-gradient(rgb(194, 195, 196), rgb(200, 200, 202));  /*bodyにグラデーションを設定 */
-	background-color:rgb(194, 195, 196);
+	background: linear-gradient(rgb(200, 200, 200), rgb(299, 199, 201));  /*bodyにグラデーションを設定 */
+	background-color:rgb(200, 200, 200);
 }
 .page {
 	padding: 0rem;
