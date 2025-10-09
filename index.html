@@ -8,12 +8,12 @@
 <link rel="icon" type="image/png" href="https://reflecting-mirror-images.github.io/site/images/favicon.png">
 <meta name="google-site-verification" content="PLAFhJ6s5O-Ugcjuk_5y6gtP0v4tSeaozw4Dwu0d-oE" />
 
-<meta name="description" content="人は鏡に███をみる。乱反射を繰り返し、実像は原型を失った。鏡の彼方に”鏡像をうつす”">
+<meta name="description" content="2025 10/23〜10/27">
 
 <meta property="og:title" content="鏡像をうつす">
-<meta property="og:description" content="人は鏡に███をみる。乱反射を繰り返し、実像は原型を失った。鏡の彼方に”鏡像をうつす”">
+<meta property="og:description" content="2025 10/23〜10/27">
 <meta property="og:url" content="https://reflecting-mirror-images.github.io/site/index.html">
-<meta property="og:image" content=https://reflecting-mirror-images.github.io/site/images/KV_1920x1080.png>
+<meta property="og:image" content="./images/KV_1920x1080.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="鏡像をうつす">
 
@@ -45,7 +45,7 @@
 	</ul>
 </nav>
 <main class="page">
-	<img id="slideshowImage" src="animation/001.png" alt="スライドショー画像" class="slideshow">
+	<img id="slideshowImage" src="animation/001.webp" alt="スライドショー画像" class="slideshow">
 	<div class="footer-text">
 		<a href="contact.html" class="footer_fadein">&copy; 2025 鏡像をうつす</a>
 	</div>
@@ -54,24 +54,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const menuButton = document.querySelector('.menu-button');
 
-	// このsetTimeoutはメニュー表示をローディング完了後に遅らせるため不要なので削除します
-	/*
-	setTimeout(() => {
-		menuButton.classList.add('visible');
-	}, 1000);
-	*/
-
 	const images = [
-		'animation/001.png', 'animation/002.png', 'animation/003.png', 'animation/004.png',
-		'animation/005.png', 'animation/006.png', 'animation/007.png', 'animation/008.png',
-		'animation/009.png', 'animation/010.png', 'animation/011.png', 'animation/012.png',
-		'animation/013.png', 'animation/014.png', 'animation/015.png', 'animation/016.png',
-		'animation/017.png', 'animation/018.png', 'animation/019.png', 'animation/020.png',
-		'animation/021.png', 'animation/022.png', 'animation/023.png', 'animation/024.png',
-		'animation/025.png', 'animation/026.png', 'animation/027.png', 'animation/028.png',
-		'animation/029.png', 'animation/030.png', 'animation/031.png', 'animation/032.png',
-		'animation/033.png', 'animation/034.png', 'animation/035.png', 'animation/036.png',
-		'animation/037.png', 'animation/038.png', 'animation/039.png', 'animation/040.png'
+		'animation/001.webp', 'animation/002.webp', 'animation/003.webp', 'animation/004.webp',
+		'animation/005.webp', 'animation/006.webp', 'animation/007.webp', 'animation/008.webp',
+		'animation/009.webp', 'animation/010.webp', 'animation/011.webp', 'animation/012.webp',
+		'animation/013.webp', 'animation/014.webp', 'animation/015.webp', 'animation/016.webp',
+		'animation/017.webp', 'animation/018.webp', 'animation/019.webp', 'animation/020.webp',
+		'animation/021.webp', 'animation/022.webp', 'animation/023.webp', 'animation/024.webp',
+		'animation/025.webp', 'animation/026.webp', 'animation/027.webp', 'animation/028.webp',
+		'animation/029.webp', 'animation/030.webp', 'animation/031.webp', 'animation/032.webp',
+		'animation/033.webp', 'animation/034.webp', 'animation/035.webp', 'animation/036.webp',
+		'animation/037.webp', 'animation/038.webp', 'animation/039.webp', 'animation/040.webp'
 	];
 
 	const slideshowImage = document.getElementById('slideshowImage');
