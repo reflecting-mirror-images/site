@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>展示風景</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+<body class="overlay1">
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-button">
+	<span></span>
+</label>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-button">
+</label>
+
+<nav class="menu-nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="concept.html">Concept</a></li>
+		<li><a href="artworks.html">Artworks</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li>
+			<a href="https://www.instagram.com/reflecting_mirror_image" target=”_blank”>
+			<img src="./images/Instagram_Glyph_Black.svg" alt="instagram_icon" class="instagram_icon">
+			</a>
+		</li>
+	</ul>
+</nav>
+<main class="page">
+	<div class="scroll-fade-in">
+		<div class="photo-container">
+			<section class="photo">
+				<img src="./images/1.webp">
+			</section>
+
+			<section class="photo">
+				<img src="./images/2.webp">
+			</section>
+
+			<section class="photo">
+				<img src="./images/3.webp">
+			</section>
+
+			<section class="photo">
+				<img src="./images/4.webp">
+			</section>
+
+			<section class="photo">
+				<img src="./images/5.webp">
+			</section>
+
+			<section class="photo">
+				<img src="./images/6.webp">
+			</section>
+
+			<section class="photo">
+				<img src="./images/7.webp">
+			</section>
+
+		</div>
+		<footer>
+			<a href="index.html">&copy; 2025 鏡像をうつす</a>
+		</footer>
+	</div>
+</main>
+<script>
+// ドキュメントが完全に読み込まれた後に実行
+	document.addEventListener('DOMContentLoaded', () => {
+		const menuButton = document.querySelector('.menu-button');
+		setTimeout(() => {
+		menuButton.classList.add('visible');
+	}, 400);
+
+// メニューバーに背景を追加するためのスクロール監視の処理
+	const scrolledMenuBg = document.getElementById('scrolled-menu-bg');
+	const scrollThreshold = 20; // 20px
+
+	const handleFixedHeaderBg = () => {
+		if (window.scrollY > scrollThreshold) {
+			scrolledMenuBg.classList.add('visible-on-scroll');
+		} else {
+			scrolledMenuBg.classList.remove('visible-on-scroll');
+		}
+	};
+
+	window.addEventListener('scroll', handleFixedHeaderBg);
+	handleFixedHeaderBg(); // ページロード時にもチェック
+// ここまで
+});
+
+// フェードイン処理
+const fadeInElements = document.querySelectorAll('.scroll-fade-in');
+const handleScroll = () => {
+	fadeInElements.forEach(element => {
+		const elementPosition = element.getBoundingClientRect().top;
+		const screenHeight = window.innerHeight;
+// 要素が画面の80%の位置に来たら'active'クラスを追加
+		if (elementPosition < screenHeight * 0.8) {
+		element.classList.add('active');
+	} else {
+		element.classList.remove('active');
+	}
+});
+};
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+</script>
+</body>
+</html>
