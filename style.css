@@ -978,9 +978,15 @@ a:hover {
 .photo img {
 	display: block;
 	width: 100%;
-	padding-top: 15%;
+	padding-top: 0px;
 	height: auto;
-	margin: auto;
+}
+.photo1 img {
+	display: block;
+	width: 100%;
+	padding-top: 15%;
+padding-bottom:60px;
+	height: auto;
 }
 }
 
