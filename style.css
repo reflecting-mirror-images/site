@@ -974,6 +974,14 @@ a:hover {
 	padding-top: 10%;
 	margin: auto;
 }
+
+.photo1 img {
+	display: block;
+	width: 80%;
+	padding-top: 10%;
+	margin: auto;
+}
+
 @media (max-width: 800px) {
 .photo img {
 	display: block;
